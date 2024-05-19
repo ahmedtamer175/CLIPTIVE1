@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Noto+Sans+Arabic:wdth,wght@85.7,100..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+
+    <!-- مكتبات js -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.7/plyr.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li class="profile">
+                <div class="img-box">
+                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Duser&psig=AOvVaw1nwqfR-0PATXIymbhXx5fX&ust=1715777064767000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMjOoeWVjYYDFQAAAAAdAAAAABAR">
+                </div>
+                <h2>user</h2>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-home"></i>
+                    <p>home</p>
+                </a>
+            </li>
+            <li>
+                <a href="#"  class="actev">
+                    <i class="fas fa-chart-pie"></i>
+                    <p>Brief</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-table"></i>
+                    <p>You</p>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <i class="fas fa-pen"></i>
+                    <p>posts</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-star"></i>
+                    <p>favoret</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-cog"></i>
+                    <p>settings</p>
+                </a>
+            </li>
+            <li class="out">
+                <a href="#">
+                    <i class="fas fa-sign-out"></i>
+                    <p>log out</p>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    
+
+
+
+    <br>
+    <div class="app_video">
+        <div class="vedio">
+            <video  autoplay loop src="video/تلاوة رائعة بصوت الشيخ ياسر الدوسري من سورة فاطر.mp4" class="video_player"></video>
+            
+            <div class="footer">
+                <div class="footer_text">
+                    <h2>AHMED TAMER</h2>
+                    <p class="description">welcome to my app</p>
+
+                    <marquee>اهلا بكم في قناتي</marquee>
+                    <h1 class="rotate">💿</h1>
+
+                    
+
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="vedio">
+            <video  autoplay loop src="video/تلاوة رائعة بصوت الشيخ ياسر الدوسري من سورة فاطر.mp4" class="video_player"></video>
+            
+            <div class="footer">
+                <div class="footer_text">
+                    <h2>AHMED TAMER</h2>
+                    <p class="description">welcome to my app</p>
+
+                    <marquee>اهلا بكم في قناتي</marquee>
+                    <h1 class="rotate">💿</h1>
+
+                    
+
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+       const videos = document.querySelectorAll('video');
+
+for(const video of videos){
+    video.addEventListener('click', function () {
+        if(video.paused){
+            video.play();
+        } else {
+            video.pause();
+        }
+    });
+}
+window.onload = function() {
+  var video = document.querySelectorAll('video');
+  video.muted = false; // تشغيل الصوت
+}
+        
+
+    </script>
+</body>
+    
+</html>
